@@ -68,6 +68,14 @@ BNNS does not include a SoftMax layer so i've included on that you can execute o
 NSValue *softmax = [NSValue valueWithPointer:[KSJBNNSExtras softmax:[result pointerValue] vector_len:RESULT_LENGTH]];
 ```
 
+For All The Torch7 Dudes I've Created An Extension To Read The .t7ios format with a single command
+
+```objc
+NSDictionary *network_components = [KSJNeuralNetwork NeuralNetworkWithTorchESFilePath:[[NSBundle mainBundle] pathForResource:@"YOUR_NET_MODELS_NAME" ofType:@"t7ios"] on:KSJNeuralNetworkDeviceCPU];
+KSJNeuralNetwork *neuralNet = network_components[kNeuralNetworkKey];
+[neuralNet forward:...]; //GO GO GO GO!
+```
+
 Using KSJNeuralNetwork for inference on GPU
 
 ...COMING SOON...
