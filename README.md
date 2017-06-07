@@ -1,4 +1,4 @@
-# KSJNeuralNetwork
+# KSJNeuralNetwork [DEPRECATED] -- Apple has released MLKit
 A Neural Network Inference Library Built atop BNNS and MPS With Support For Importing Torch7ES Models.
 
 An Example is included in the KSJAIKIT.xcodeproj for both XOR(LINEAR classifier) and MNIST(CNN classifer).
